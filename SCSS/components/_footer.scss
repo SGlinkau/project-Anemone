@@ -1,0 +1,9 @@
+@use "../utils/vars" as *;
+footer {
+  background-color: $darkFontCl;
+  color: $whiteFontCl;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px 0px;
+}

@@ -1,0 +1,42 @@
+.hero {
+  padding-top: 95px;
+  padding-bottom: 40px;
+
+  &__div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  &__img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin: 0px;
+  }
+
+  &__mintitle {
+    width: 46px;
+    margin-left: 11px;
+    margin-right: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.21;
+    z-index: 1;
+  }
+
+  &__svg {
+    background-color: inherit;
+    border: none;
+    margin-left: 8px;
+    padding: 0;
+  }
+}

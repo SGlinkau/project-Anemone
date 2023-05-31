@@ -1,0 +1,29 @@
+.blog {
+  &__img {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__arrows {
+    display: flex;
+    padding-top: 4px;
+    gap: 25px;
+    justify-content: center;
+  }
+  &__text {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 14px;
+  }
+
+  &__button-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+    padding-bottom: 60px;
+  }
+}

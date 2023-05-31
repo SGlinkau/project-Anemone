@@ -1,0 +1,335 @@
+@use "../utils/vars" as *;
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+// główny napis ANEMONE
+
+h1 {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 63px;
+}
+
+// nazwy produktów w sekcji store
+
+h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+// max. szerokosc contentu i odstępy między sekcjami
+
+//.container {
+// max-width: 288px;
+// margin: 100px 16px auto;
+//}
+
+// nagłówki about, store, delivery, blog
+
+.section__header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: $darkFontCl;
+}
+
+// czcionka dla <p> w sekcji about
+
+.about--font {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $darkFontCl;
+}
+
+// czcionka dla cen pod nazwami produktów
+
+.price--font {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: fontPriceCl;
+}
+
+// czcionka dla napisów w sekcji delivery
+
+.delivery--font {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $darkFontCl;
+}
+
+// dla nnagłówków w footerze
+
+.footer__header--font {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+// dla tekstu w footerze
+
+.footer--font {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+// CZCIONKI DLA MODALI
+// czcionki dla modalu contact us i modalu thank you są takie same ale nie wiedziałem jak je nazwać
+
+// nagłówek contact us
+
+.contact-us__header--font {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  // teskt w contact us
+
+  &--font {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  // labelki name/email
+
+  &__label-font {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: $fontModalGreyCl;
+  }
+
+  // placeholdery
+
+  &__placeholder-font {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: $fontModalPlaceholder;
+  }
+}
+
+// modal newsletter (czcionki placeholder i label takie same jak w innych)
+
+//nagłówek
+
+.newsletter__header--font {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+
+  // tekst
+
+  &--font {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+// ogólne dla buttonów poza modalami
+
+.btn {
+  border-radius: 38px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $whiteFontCl;
+  background-color: $btnDefCl;
+  font-weight: 500;
+  line-height: 24px;
+  transition: $btnAnimation;
+  width: 208px;
+  height: 44px;
+  font-size: 20px;
+
+  &:focus {
+    background-color: $btnFocusCl;
+    transition: $btnAnimation;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $btnHoverCl;
+    transition: $btnAnimation;
+  }
+}
+
+// przycisk dla modali thank you i contact us
+
+.modal-btn {
+  width: 240px;
+  height: 37px;
+  border-radius: 8px;
+  background-color: $btnDefCl;
+  color: $whiteFontCl;
+  border: none;
+  transition: $btnAnimation;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  &:focus {
+    background-color: $btnFocusCl;
+    transition: $btnAnimation;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $btnHoverCl;
+    transition: $btnAnimation;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 120px;
+    line-height: 146px;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .container {
+    max-width: 720px;
+    margin: 100px 24px auto;
+  }
+
+  // ta czcionka i czcionka elementów w headerze na górze strony (anemone, about us, store, delivery, blog) jest taka sama
+
+  .about--font {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .price--font {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .delivery--font {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .footer__header--font {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footer--font {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .contact-us__header--font {
+    font-size: 32px;
+    line-height: 39px;
+
+    &--font {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__label-font {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__placeholder-font {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .newsletter__header--font {
+    font-size: 28px;
+    line-height: 34px;
+
+    & --font {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+
+  .btn {
+    width: 280px;
+    height: 64px;
+    font-size: 28px;
+  }
+
+  .modal-btn {
+    width: 416px;
+    height: 50px;
+
+    &--newsletter {
+      width: 336px;
+    }
+  }
+
+  .section__header {
+    font-size: 44px;
+    line-height: 54px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 160px;
+    line-height: 195px;
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  // czcionka dla elementów headera - tutaj sie różni od about
+
+  .header__item--font {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about--font {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .price--font {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .delivery--font {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .container {
+    max-width: 1232px;
+  }
+}
