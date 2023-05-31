@@ -282,6 +282,11 @@ h3 {
   padding: 0px;
   overflow: visible;
 }
+@media screen and (min-width: 768px) {
+  .header__menu-button {
+    display: none;
+  }
+}
 
 footer {
   background-color: #000;
