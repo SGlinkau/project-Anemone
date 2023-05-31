@@ -2,20 +2,189 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
-    <link
+
+    <title>Anemone</title>
+
+    <!-- Site fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Modern Normalizer -->
+    <!-- <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
+      href="./node_modules/modern-normalize/modern-normalize.css"
+    /> -->
+
+    <!-- Font Montserrat 400, 500, 700 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-    <include src="./partials/example.html"></include>
+    <header>
+      <section>
+        <nav>
+          <svg width="45" height="35">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+          <ul>
+            <li>
+              <svg width="22" height="22">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </li>
+            <li>
+              <button>
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
 
-    <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    <script src="./index.js" type="module"></script>
+    <main>
+      <!-- Hero -->
+      <section>
+        <span>flower studio</span>
+        <img src="./images/image_logoDesktop.jpg" style="border-radius: 226px" alt="" />
+        <svg width="64" height="76">
+          <use href="./images/icons.svg#icon-btn"></use>
+        </svg>
+        <h1 style="text-transform: uppercase">anemone</h1>
+      </section>
+
+      <!-- About -->
+      <section>
+        <h2 style="text-transform: uppercase">about</h2>
+        <p>
+          We are a minimalistic flower studio. We love people and flowers.
+          Therefore, every day we give people the beauty and joy creating
+          stylish and modern masterpieces. Every bouquet we create is unique as
+          you are.
+        </p>
+        <img
+          src="./images/image_aboutDesktop.jpg"
+          style="border-radius: 0px 639.5px 639.5px 0px"
+          alt=""
+        />
+      </section>
+
+      <!-- store -->
+      <section>
+        <h2 style="text-transform: uppercase">store</h2>
+        <div>
+          <img src="./images/image_store1Desktop.jpg" alt="" />
+          <h3>compliments</h3>
+          <p>from $15</p>
+        </div>
+        <div>
+          <img src="./images/image_store2Desktop.jpg" alt="" />
+          <h3>bouquets size S</h3>
+          <p>from $25</p>
+        </div>
+        <div>
+          <img src="./images/image_store3Desktop.jpg" alt="" />
+          <h3>bouquets size M</h3>
+          <p>from $45</p>
+        </div>
+        <div>
+          <img src="./images/image_store4Desktop.jpg" alt="" />
+          <h3>bouquets size L</h3>
+          <p>from $60</p>
+        </div>
+
+        <button>Order flowers</button>
+      </section>
+
+      <!-- Delivery -->
+      <section>
+        <h2 style="text-transform: uppercase">about</h2>
+        <ol>
+          <li>Choose your bouquet and make an order on website</li>
+          <li>
+            Wait for the call to clarify the details of the order. You can pay
+            online or to the courier
+          </li>
+          <li>
+            Wait for the delivery at the selected time or pick up the order from
+            the store
+          </li>
+          <li>Make someone happy or enjoy yourself</li>
+        </ol>
+        <img src="./images/image_deliveryDesktop.jpg" alt="" />
+      </section>
+
+      <!-- Blog -->
+      <section>
+        <h2 style="text-transform: uppercase">blog</h2>
+        <img src="./images/image_blog1Dekstop.jpg" alt="" />
+        <img src="./images/image_blog2Dekstop.jpg" alt="" />
+        <img src="./images/image_blog3Dekstop.jpg" alt="" />
+        <svg width="50" height="50">
+          <use href="./images/icons.svg#icon-arrow-left"></use>
+        </svg>
+        <svg width="50" height="50">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+        <p>Follow to our newsletter</p>
+        <button>Subscribe</button>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h2>Navigation</h2>
+        <nav>
+          <ul>
+            <li>Anemone</li>
+            <li>About us</li>
+            <li>Store</li>
+            <li>Delivery</li>
+          </ul>
+        </nav>
+      </section>
+
+      <section>
+        <h2>Contacts</h2>
+
+        <address style="font-style: normal">
+          <ul>
+            <li>+38 063 123 45 67</li>
+            <li>anemonestudio@example.com</li>
+            <li>Reitarska Street, 11 Kyiv, Ukraine</li>
+          </ul>
+        </address>
+      </section>
+
+      <section>
+        <h2>Opening times</h2>
+        <p>
+          Every day <br />
+          9:00 - 22:00
+        </p>
+      </section>
+
+      <section>
+        <svg width="28" height="28">
+          <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+        <svg width="28" height="28" fill="#fff">
+          <use href="./images/icons.svg#icon-tel"></use>
+        </svg>
+      </section>
+    </footer>
   </body>
 </html>
