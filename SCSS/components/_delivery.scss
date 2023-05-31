@@ -1,0 +1,39 @@
+@use "../utils/vars" as *;
+.delivery {
+  &__list {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 26px;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+
+    &__element {
+      gap: 8px;
+      align-items: center;
+      display: flex;
+    }
+  }
+  &__number {
+    padding: 8px 14px;
+    border: 1px solid $darkFontCl;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    display: flex;
+
+    &--one {
+      padding: 8px 16px;
+    }
+    &--four {
+      padding: 8px 14px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
