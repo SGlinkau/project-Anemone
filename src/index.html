@@ -78,7 +78,7 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero" id="anemone">
         <div class="container hero__div">
           <h2 class="hero__mintitle">pracownia kwiatowa</h2>
           <div class="hero__img">
@@ -194,41 +194,45 @@
       </section>
     </main>
 
-    <footer class="container footer--font">
-      <section class="footer-section">
-        <div>
+    <footer>
+      <section class="footer-section container footer--font">
+        <div class="footer-section__box footer-section__box--logo">
+          <svg width="73" height="57">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </div>
+        <div class="footer-section__box">
           <h2 class="footer__header--font footer-section__title">Navigation</h2>
           <nav>
             <ul class="footer-section__nav">
-              <li>Anemone</li>
-              <li>About us</li>
-              <li>Store</li>
-              <li>Delivery</li>
+              <li><a class="footer-section__link" href="#anemone">Anemone</a></li>
+              <li><a class="footer-section__link" href="#about-us">About us</a></li>
+              <li><a class="footer-section__link" href="#store">Store</a></li>
+              <li><a class="footer-section__link" href="#delivery">Delivery</a></li>
             </ul>
           </nav>
         </div>
 
-        <div>
+        <div class="footer-section__box">
           <h2 class="footer__header--font footer-section__title">Opening times</h2>
           <p class="footer-section__text">
             Every day <br />
             9:00 - 22:00
           </p>
         </div>
-      </section>
-      <section class="footer-section">
-        <div class="footer-section__contact">
+
+        <div class="footer-section__box">
           <h2 class="footer__header--font footer-section__title">Contacts</h2>
 
           <address style="font-style: normal">
-            <ul class="footer-section__contact__list">
+            <ul class="footer-section__box__list">
               <li>+38 063 123 45 67</li>
               <li>anemonestudio@example.com</li>
-              <li>Reitarska Street, 11 Kyiv, Ukraine</li>
+              <li>Reitarska Street, 11 </br> Kyiv, Ukraine</li>
             </ul>
           </address>
         </div>
-        <div class="footer-section__social">
+        <div class="footer-section__box footer-section__box--socialmedia">
           <svg width="28" height="28">
             <use href="./images/icons.svg#icon-facebook"></use>
           </svg>
