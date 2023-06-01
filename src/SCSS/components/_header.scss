@@ -1,10 +1,14 @@
-@use "../utils/vars" as *;
+@use '../utils/vars' as *;
 .header {
   width: 100vw;
   background-color: $whiteFontCl;
   z-index: 1000;
   padding-top: 16px;
   position: fixed;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+  }
 
   &__ul {
     display: flex;
@@ -14,18 +18,49 @@
     align-items: center;
   }
 
+  &__links {
+    display: flex;
+    padding-inline-start: 0;
+    column-gap: 24px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $darkFontCl;
+  }
+
   &__nav {
     width: 100%;
     align-items: flex-start;
     display: flex;
     position: relative;
     justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    &-wider {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &__button-phone {
+    background-color: $whiteFontCl;
+    border: 0;
   }
 
   &__menu-button {
     cursor: pointer;
 
-    background-color: $darkFontCl;
+    background-color: $whiteFontCl;
     border: 0;
     margin: 0;
     padding: 0px;
