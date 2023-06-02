@@ -20,11 +20,12 @@ footer {
     gap: 12px;
     padding: 0px;
     margin: 0px;
-  }
 
-  &__link {
-    text-decoration: none;
-    color: $whiteFontCl;
+    &__link {
+      text-decoration: none;
+      color: $whiteFontCl;
+      margin: 0;
+    }
   }
 
   &__text {
@@ -40,6 +41,16 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 12px;
+
+      &__link {
+        text-decoration: none;
+        color: $whiteFontCl;
+        margin: 0;
+      }
+
+      &__address {
+        margin: 0;
+      }
     }
 
     &--socialmedia {
@@ -62,7 +73,7 @@ footer {
     gap: 32px;
 
     &__box {
-      width: 128px;
+      width: 130px;
     }
   }
 }
