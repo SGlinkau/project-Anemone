@@ -4,9 +4,14 @@
   background-color: $whiteFontCl;
   padding-top: 16px;
   position: fixed;
+  top: 0;
 
   @media screen and (min-width: 768px) {
     padding-top: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 28px;
   }
 
   &__ul {
@@ -21,6 +26,10 @@
     display: flex;
     padding-inline-start: 0;
     column-gap: 24px;
+
+    @media screen and (min-width: 1280px) {
+      column-gap: 48px;
+    }
   }
 
   &__link {
@@ -54,11 +63,15 @@
   &__button-phone {
     background-color: $whiteFontCl;
     border: 0;
+    padding: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__menu-button {
     cursor: pointer;
-
     background-color: $whiteFontCl;
     border: 0;
     margin: 0;

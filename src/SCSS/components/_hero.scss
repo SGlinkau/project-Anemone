@@ -1,6 +1,16 @@
 .hero {
   padding-top: 95px;
-  padding-bottom: 40px;
+  padding-bottom: 76px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 119px;
+    padding-bottom: 134px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 149px;
+    padding-bottom: 133px;
+  }
 
   &__div {
     justify-content: center;
@@ -21,22 +31,76 @@
     left: 50%;
     transform: translate(-50%, 50%);
     margin: 0px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 120px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 160px;
+    }
   }
 
   &__mintitle {
     width: 46px;
-    margin-left: 11px;
     margin-right: 14px;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.21;
-    z-index: 0;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      width: 76px;
+      font-size: 24px;
+      margin-right: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 101px;
+      font-size: 32px;
+      margin-right: 110px;
+    }
+  }
+
+  &__button {
+    width: 64px;
+    height: 76px;
+    margin-left: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 145px;
+      height: 150px;
+      margin-left: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 166px;
+      height: 166px;
+      margin-left: 110px;
+    }
   }
 
   &__svg {
-    background-color: inherit;
-    border: none;
-    margin-left: 8px;
-    padding: 0;
+    width: 64px;
+    height: 76px;
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      width: 145px;
+      height: 150px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 166px;
+      height: 166px;
+    }
   }
 }

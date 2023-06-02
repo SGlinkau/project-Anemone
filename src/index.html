@@ -35,10 +35,10 @@
             </svg>
           </a>
           <ul class="header__ul">
-            <li>
+            <li><button class="header__button-phone" type="button">
               <svg width="22" height="22">
                 <use href="./images/icons.svg#icon-tel"></use>
-              </svg>
+              </svg></button>
             </li>
             <li>
               <button
@@ -56,13 +56,13 @@
         </nav>
         <nav class="header__nav-wider">
           <a href="index.html">
-            <svg width="72" height="57">
+            <svg class="header__logo" width="72" height="57">
               <use href="./images/icons.svg#icon-logo"></use>
             </svg>
           </a>
           <ul class="header__links">
             <li><a class="header__link" href="#">Anemone</a></li>
-            <li><a class="header__link" href="#about-us">About us</a></li>
+            <li><a class="header__link" href="#about">About us</a></li>
             <li><a class="header__link" href="#store">Store</a></li>
             <li><a class="header__link" href="#delivery">Delivery</a></li>
             <li><a class="header__link" href="#blog">Blog</a></li>
@@ -80,21 +80,26 @@
       <!-- Hero -->
       <section class="hero" id="anemone">
         <div class="container hero__div">
-          <h2 class="hero__mintitle">pracownia kwiatowa</h2>
+          <h2 class="hero__mintitle">flower studio</h2>
           <div class="hero__img">
-            <img src="./images/hero.jpg" style="border-radius: 226px" alt="" />
+            <img src="./images/hero.jpg" style="border-radius: 226px" alt="" 
+            srcset="./images/hero.jpg 145w,
+            ./images/hero-tablet&desktop.jpg 390w"
+            sizes="(max-width: 767px) 145px, (min-width: 768px) 390px"/>
           </div>
-          <svg width="64" height="76" class="hero__svg">
+          <button class="hero__button" type="button">
+          <svg class="hero__svg">
             <use href="./images/icons.svg#icon-btn"></use>
           </svg>
+          </button>
           <h1 class="hero__title">anemone</h1>
         </div>
       </section>
 
       <!-- About -->
-      <section class="container" id="about-us">
-        <h2 class="section__header title">
-          about
+      <section class="container" id="about">
+  
+        <h2 class="section__header title">about
           <div class="title__line"></div>
         </h2>
         <p class="about--font">
@@ -107,9 +112,10 @@
 
       <!-- store -->
       <section class="container" id="store">
-        <h2 class="section__header title">
-          store
-          <div class="title__line"></div>
+        
+        <h2 class="section__header title">store
+          <div class="title__line">
+          </div> 
         </h2>
         <div class="store">
           <div class="store__img">
@@ -139,6 +145,7 @@
       </section>
 
       <!-- Delivery -->
+      <section class="delivery" id="delivery">
       <section class="delivery" id="delivery">
         <div class="container">
           <h2 class="section__header title">
@@ -171,8 +178,8 @@
 
       <!-- Blog -->
       <section class="container" id="blog">
-        <h2 class="section__header title">
-          blog
+       
+        <h2 class="section__header title">blog
           <div class="title__line"></div>
         </h2>
         <div class="blog__img">
