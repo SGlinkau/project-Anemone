@@ -18,6 +18,7 @@
     <!-- <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" /> -->
 
     <!-- Font Montserrat 400, 500, 600, 700 -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -74,8 +75,8 @@
             <li><a class="header__link" href="#delivery">Delivery</a></li>
             <li><a class="header__link" href="#blog">Blog</a></li>
           </ul>
-          <button class="header__button-phone" type="button">
-            <svg width="24" height="24">
+          <button class="header__button-phone" type="button" data-modal-open-tablet>
+            <svg width="22" height="22">
               <use href="./images/icons.svg#icon-tel"></use>
             </svg>
           </button>
@@ -236,7 +237,7 @@
         </div>
         <p class="blog__text">Follow to our newsletter</p>
         <div class="blog__button-box">
-          <button class="btn">Subscribe</button>
+          <button class="btn" data-modal-open-sub>Subscribe</button>
         </div>
       </section>
     </main>
@@ -329,6 +330,31 @@
         </ul>
       </nav>
     </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close" data-modal-close-tablet>
+          <svg width="18px" height="18px">
+            <use href="./images//icons.svg#icon-icon-x-modal"></use>
+          </svg>
+        </button>
+        <form>
+          <h2 class="modal__title">Contact us</h2>
+          <p class="modal__content">
+            If you have any additional questions or you want to clarify something before you make an
+            order please fill in your contact details. We will call you back.
+          </p>
+          <label class="modal__element">
+            Name
+            <input class="modal__input" type="text" name="name" placeholder="Your name" />
+          </label>
+          <label class="modal__element">
+            Email
+            <input class="modal__input" type="text" name="name" placeholder="Your email" />
+          </label>
+          <button class="modal__button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
 
     <script
       defer
@@ -336,6 +362,68 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal-tablet.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
+
+    <div class="menu-modal__button">
+      <button class="menu-modal__button-close js-close-menua">
+        <svg class="menu__icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal-sub>
+      <div class="modal">
+        <button type="button" class="modal__button-close" data-modal-close-sub>
+          <svg class="modal__button-close-icon" width="100%" height="100%">
+            <use href="./images/icons.svg#icon-icon-x-modal"></use>
+          </svg>
+        </button>
+
+        <div class="modal-flow">
+          <div class="modal-flow__img">
+            <img
+              src="./images/image_modalMobile.jpg"
+              srcset="
+                ./images/image_modalMobile.jpg  272w,
+                ./images/image_modalTablet.jpg  588w,
+                ./images/image_modalDesktop.jpg 428w
+              "
+              sizes="(min-width: 1280px) 428px, (min-width: 768px) 588px, (max-width: 767px) 272px, 100vw"
+              alt="orange-green bouquet of flowers"
+            />
+          </div>
+
+          <div class="modal-flow__container">
+            <p class="modal-flow__title">Follow to our newsletter</p>
+            <p class="modal-flow__description">
+              Be the first to get exclusive offers and the latest news on our product directly in
+              your box.
+            </p>
+
+            <form class="modal-flow__form">
+              <label class="modal-flow__form-item">
+                <span class="modal-flow__form-title">Email</span>
+
+                <input
+                  class="modal-flow__form-input"
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                />
+              </label>
+              <button class="modal-flow__form-subscribe" type="submit">
+                <span class="modal-flow__form-subscribe-text">Subscribe</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal-sub.js"></script>
   </body>
 </html>

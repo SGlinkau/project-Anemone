@@ -1,0 +1,127 @@
+@use '../utils/vars' as *;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
+.backdrop {
+  transition: visibility 0.4s linear, opacity 0.4s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  &__ .modal {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+.modal {
+  padding: 28px 16px;
+  position: absolute;
+  width: 272px;
+  height: 357px;
+  background: rgba(255, 255, 255, 1);
+  display: block;
+  transition: transform 0.3s linear;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  &__close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background-color: transparent;
+    border: none;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.22;
+    margin-bottom: 14px;
+  }
+  &__content {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.22;
+    color: $fontModalGreyCl;
+    margin-bottom: 18px;
+  }
+  &__element {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.22;
+    color: $fontModalGreyCl;
+  }
+  &__input {
+    height: 35px;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    padding: 10px 0 10px 12px;
+    outline-style: none;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    color: $fontModalPlaceholder;
+  }
+  &__button {
+    width: 240px;
+    height: 37px;
+    background-color: $btnUnactiveCl;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.22;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 48px 32px;
+    width: 480px;
+    height: 511px;
+    &__close {
+      width: 24px;
+      height: 24px;
+      top: 24px;
+      right: 24px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+    &__content {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+    &__element {
+      font-size: 14px;
+    }
+    &__input {
+      height: 49px;
+      padding: 16px 0 16px 16px;
+      outline-style: none;
+      margin-top: 8px;
+      margin-bottom: 24px;
+      color: $fontModalPlaceholder;
+    }
+    &__button {
+      width: 416px;
+      height: 50px;
+      margin-top: 14px;
+      font-size: 18px;
+    }
+  }
+}
