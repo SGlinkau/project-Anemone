@@ -27,5 +27,8 @@
             <path d="m7.7 17.07-1.2-.82h22.88v-.64H6.64l1.14-.65-.32-.56-2.61 1.5 2.5 1.7.35-.53z"/>
         </symbol>
         <symbol id="icon-x" viewBox="0 0 32 32"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M24 8 8 24M8 8l16 16" style="stroke:var(--color2, #fff)"/></symbol>
+    <symbol id="icon-icon-x-modal" viewBox="0 0 32 32">
+<path d="M31.331 3.902A2.287 2.287 0 0 0 28.098.67zM.669 28.098a2.286 2.286 0 1 0 3.232 3.233zm30.662 0L3.902.669.67 3.901 28.099 31.33zM.669 3.902l27.429 27.429 3.232-3.233L3.901.669zM28.098.669.669 28.098l3.232 3.232L31.33 3.901z"/>
+</symbol>
     </defs>
 </svg>

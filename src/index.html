@@ -35,10 +35,12 @@
             </svg>
           </a>
           <ul class="header__ul">
-            <li><button class="header__button-phone" type="button">
-              <svg width="22" height="22">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg></button>
+            <li><button class="header__button-phone" type="button" data-modal-open>
+               <svg width="22" height="22">
+               <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+           </button>
+
             </li>
             <li>
               <button
@@ -67,11 +69,11 @@
             <li><a class="header__link" href="#delivery">Delivery</a></li>
             <li><a class="header__link" href="#blog">Blog</a></li>
           </ul>
-          <button class="header__button-phone" type="button">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-tel"></use>
-            </svg>
-          </button>
+        <button class="header__button-phone" type="button" data-modal-open >
+               <svg width="22" height="22">
+               <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+           </button>
         </nav>
       </section>
     </header>
@@ -274,9 +276,33 @@
           <li class="menu-modal__item">
             <a class="menu-modal__link js-close-menue" href="#blog">Blog</a>
           </li>
-        </ul>
+         </ul>
       </nav>
     </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close" data-modal-close>
+        <svg width="18px" height="18px">
+          <use href="./images//icons.svg#icon-icon-x-modal"></use>
+        </svg>
+        </button>
+      <form>
+         <h2 class="modal__title">Contact us</h2>
+          <p class="modal__content">If you have any additional questions or you want to clarify something before you make an order please fill in your contact details. We will call you back.            
+          </p>
+           <label class="modal__element">
+              Name
+            <input class="modal__input" type="text" name="name" placeholder="Your name" />
+          </label>
+            <label class="modal__element">
+              Email
+          <input class="modal__input" type="text" name="name" placeholder="Your email" />
+          </label>
+         <button class="modal__button" type="submit">Send</button>
+     </form>
+ </div>                   
+</div>
+
 
     <script
       defer
@@ -284,6 +310,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script src="./js/modal.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
