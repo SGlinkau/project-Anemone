@@ -23,7 +23,10 @@
       rel="stylesheet"
     />
     <!-- Font Inter 500, 700 dla footer-->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -37,10 +40,12 @@
             </svg>
           </a>
           <ul class="header__ul">
-            <li><button class="header__button-phone" type="button">
-              <svg width="22" height="22">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg></button>
+            <li>
+              <button class="header__button-phone" type="button">
+                <svg width="22" height="22">
+                  <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+              </button>
             </li>
             <li>
               <button
@@ -84,15 +89,18 @@
         <div class="container hero__div">
           <h2 class="hero__mintitle">flower studio</h2>
           <div class="hero__img">
-            <img src="./images/hero.jpg" style="border-radius: 226px" alt="" 
-            srcset="./images/hero.jpg 145w,
-            ./images/hero-tablet&desktop.jpg 390w"
-            sizes="(max-width: 767px) 145px, (min-width: 768px) 390px"/>
+            <img
+              src="./images/hero.jpg"
+              style="border-radius: 226px"
+              alt=""
+              srcset="./images/hero.jpg 145w, ./images/hero-tablet&desktop.jpg 390w"
+              sizes="(max-width: 767px) 145px, (min-width: 768px) 390px"
+            />
           </div>
           <button class="hero__button" type="button">
-          <svg class="hero__svg">
-            <use href="./images/icons.svg#icon-btn"></use>
-          </svg>
+            <svg class="hero__svg">
+              <use href="./images/icons.svg#icon-btn"></use>
+            </svg>
           </button>
           <h1 class="hero__title">anemone</h1>
         </div>
@@ -100,8 +108,8 @@
 
       <!-- About -->
       <section class="container" id="about">
-  
-        <h2 class="section__header title">about
+        <h2 class="section__header title">
+          about
           <div class="title__line"></div>
         </h2>
         <p class="about--font">
@@ -114,10 +122,9 @@
 
       <!-- store -->
       <section class="container" id="store">
-        
-        <h2 class="section__header title">store
-          <div class="title__line">
-          </div> 
+        <h2 class="section__header title">
+          store
+          <div class="title__line"></div>
         </h2>
         <div class="store">
           <div class="store__img">
@@ -147,41 +154,72 @@
       </section>
 
       <!-- Delivery -->
-      <section class="delivery" id="delivery">
+
       <section class="delivery" id="delivery">
         <div class="container">
-          <h2 class="section__header title">
+          <h2 class="section__header delivery__title">
             delivery
-            <div class="title__line"></div>
+            <div class="delivery__title__line"></div>
           </h2>
-          <ul class="delivery__list delivery--font">
+          <ul class="delivery__list">
             <li class="delivery__list__element">
-              <div class="delivery__number delivery__number--one">1</div>
+              <div class="delivery__list__number">1</div>
               <p class="delivery__list__text">Choose your bouquet and make an order on website</p>
             </li>
 
             <li class="delivery__list__element">
-              <div class="delivery__number">2</div>
-              Wait for the call to clarify the details of the order. You can pay online or to the
-              courier
+              <div class="delivery__list__number">2</div>
+              <p class="delivery__list__text">
+                Wait for the call to clarify the details of the order. You can pay online or to the
+                courier
+              </p>
             </li>
             <li class="delivery__list__element">
-              <div class="delivery__number">3</div>
-              Wait for the delivery at the selected time or pick up the order from the store
+              <div class="delivery__list__number">3</div>
+              <p class="delivery__list__text">
+                Wait for the delivery at the selected time or pick up the order from the store
+              </p>
             </li>
             <li class="delivery__list__element">
-              <div class="delivery__number delivery__number--four">4</div>
-              Make someone happy or enjoy yourself
+              <div class="delivery__list__number">4</div>
+              <p class="delivery__list__text">Make someone happy or enjoy yourself</p>
             </li>
           </ul>
         </div>
-        <img src="./images/delivery.jpg" alt="" class="delivery__img" />
+        <picture>
+          <source
+            media="(min-width:1280px)"
+            srcset="./images/image_deliveryDesktop.jpg 1x, ./images/image_deliveryDesktop.jpg 2x"
+            type="image/jpeg"
+          />
+
+          <source
+            media="(min-width:768px)"
+            srcset="./images/image_deliveryTablet.jpg 1x, ./images/image_deliveryTablet.jpg 2x"
+            type="image/jpeg"
+          />
+
+          <source
+            media="(max-width:767px)"
+            srcset="./images/image_deliveryMobile.jpg 1x, ./images/image_deliveryMobile.jpg 2x"
+            type="image/jpeg"
+          />
+          <img
+            src="./images/image_deliveryDesktop.jpg"
+            alt=""
+            class="delivery__img"
+            alt="delicate anemone flowers"
+            loading="lazy"
+            width="1280"
+            height="391"
+          />
+        </picture>
       </section>
 
       <!-- Blog -->
       <section class="container" id="blog">
-       
-        <h2 class="section__header title">blog
+        <h2 class="section__header title">
+          blog
           <div class="title__line"></div>
         </h2>
         <div class="blog__img">
@@ -225,8 +263,8 @@
         <div class="footer-section__box">
           <h2 class="footer__header--font footer-section__title">Opening times</h2>
           <p class="footer-section__text">
-            Every day<br>
-            <time>9:00</time> 
+            Every day<br />
+            <time>9:00</time>
             -
             <time>22:00</time>
           </p>
@@ -237,9 +275,19 @@
 
           <address style="font-style: normal">
             <ul class="footer-section__box__list">
-              <li><a class="footer-section__box__list__link" href="tel:+380631234567">+38 063 123 45 67</a></li>
-              <li><a class="footer-section__box__list__link" href="mailto:anemonestudio@example.com">anemonestudio@example.com</a></li>
-              <li><p class="footer-section__box__list__address">Reitarska Street, 11 Kyiv, Ukraine</p></li>
+              <li>
+                <a class="footer-section__box__list__link" href="tel:+380631234567"
+                  >+38 063 123 45 67</a
+                >
+              </li>
+              <li>
+                <a class="footer-section__box__list__link" href="mailto:anemonestudio@example.com"
+                  >anemonestudio@example.com</a
+                >
+              </li>
+              <li>
+                <p class="footer-section__box__list__address">Reitarska Street, 11 Kyiv, Ukraine</p>
+              </li>
             </ul>
           </address>
         </div>

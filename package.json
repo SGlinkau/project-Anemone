@@ -2,7 +2,7 @@
   "name": "project-group-6",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://github.com/SGlinkau/project-group-6",
+  "homepage": "https://github.com/AndreSagan/project-group-6",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /project-group-6/"
