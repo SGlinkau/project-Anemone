@@ -18,6 +18,8 @@
     <!-- <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" /> -->
 
     <!-- Font Montserrat 400, 500, 600, 700 -->
+
+ 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -139,7 +141,7 @@
             <img src="./images/store4.jpg" alt="" />
             <h3 class="store__img-title">bouquets size L</h3>
             <p class="store__img-text price--font">from $60</p>
-          </div>
+          </div> 
         </div>
         <div class="store__button-box">
           <button class="btn">Order flowers</button>
@@ -198,7 +200,7 @@
         </div>
         <p class="blog__text">Follow to our newsletter</p>
         <div class="blog__button-box">
-          <button class="btn">Subscribe</button>
+          <button class="btn" data-modal-open>Subscribe</button>
         </div>
       </section>
     </main>
@@ -289,5 +291,70 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
+
+
+    <div class="menu-modal__button">
+      <button class="menu-modal__button-close js-close-menua">
+        <svg class="menu__icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+    </div>
+
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        
+        <button type="button" class="modal__button-close" data-modal-close>
+          <svg class="modal__button-close-icon" width="100%" height="100%">
+            <use href="./images/icons.svg#icon-icon-x-modal"></use>
+          </svg>
+        </button>
+
+        <div class="modal-flow">
+          <div class="modal-flow__img">
+       <img src="./images/image_modalMobile.jpg"
+       srcset="./images/image_modalMobile.jpg 272w, ./images/image_modalTablet.jpg 588w, ./images/image_modalDesktop.jpg 428w"
+       sizes="(min-width: 1280px) 428px, (min-width: 768px) 588px, (max-width: 767px) 272px, 100vw"
+       alt="orange-green bouquet of flowers"/>
+       </div>
+
+       <div class="modal-flow__container">
+        <p class="modal-flow__title">
+          Follow to our newsletter
+        </p>
+        <p class="modal-flow__description">Be the first to get exclusive offers and the latest news on our product directly in your box.</p>
+
+        <form class="modal-flow__form">
+          <label class="modal-flow__form-item">
+            <span class="modal-flow__form-title">Email</span>
+
+            <input
+              class="modal-flow__form-input"
+              type="email"
+              name="email"
+              placeholder="Your email"
+            />
+          </label>
+          <button class="modal-flow__form-subscribe" type="submit">
+            <span class="modal-flow__form-subscribe-text">Subscribe</span>
+          </button>
+          </form>
+       </div>
+
+        
+           
+       
+
+
+        </div>
+
+      </div>
+      </div>
+    
+    <script src="./js/modal.js"></script>
+
+
+
   </body>
 </html>
