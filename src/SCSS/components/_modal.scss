@@ -125,3 +125,8 @@ label {
     }
   }
 }
+
+//For now only as input class but maybe we should move it to separate class connected with modal form fields
+input:invalid {
+  border: red solid 3px;
+}

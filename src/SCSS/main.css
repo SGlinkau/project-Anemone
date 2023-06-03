@@ -582,3 +582,74 @@ footer {
 .footer-section__social {
   width: 116px;
 }/*# sourceMappingURL=main.css.map */
+
+/*input validation*/
+/*
+input:required {
+  border: 1px solid #D7D7D7;
+  border-radius: 4px;
+}
+input:required {
+  border: 1px solid #D7D7D7;
+  border-radius: 4px;
+}
+input:required + label:after {
+  content: '*';
+  display: inline-block;
+  margin-left: .32rem;
+}
+
+input.filled:valid {
+  background: #D7D7D7;
+}
+input:invalid {
+  background: red;
+}
+input.filled:valid + label:after {
+  content: '✓';
+  display: inline-block;
+  margin-left: .32rem;
+}
+input:invalid + label:after {
+  content: 'x';
+  display: inline-block;
+  margin-left: .32rem;
+
+}
+
+*/
+
+input:invalid,
+textarea:invalid {
+    border-color: red;
+    outline: none;
+    box-shadow: 0 0 2px red;
+}
+
+input:required:valid,
+textarea:required:valid {
+    border-color: #D7D7D7;
+    outline: none;
+    box-shadow: 0 0 2px #D7D7D7;
+}
+
+/*
+.status_ok{color: #D7D7D7}
+.status_err{color: #F00};
+  
+*/
+
+.error {
+border-color: red;
+outline: none;
+box-shadow: 0 0 2px 
+
+}
+
+
+
+
+
+
+
+
