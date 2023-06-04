@@ -9,6 +9,7 @@ label {
   flex-direction: column;
 }
 .backdrop {
+  z-index: 1000;
   transition: visibility 0.4s linear, opacity 0.4s linear;
   position: fixed;
   top: 0;
@@ -25,7 +26,7 @@ label {
     transform: translate(-50%, -50%) scale(0);
   }
 }
-.modal {
+.modalContact {
   padding: 28px 16px;
   position: absolute;
   width: 272px;
@@ -38,6 +39,7 @@ label {
   transform: translate(-50%, -50%) scale(1);
 
   &__close {
+    cursor: pointer;
     position: absolute;
     right: 16px;
     top: 16px;
@@ -74,6 +76,7 @@ label {
     color: $fontModalPlaceholder;
   }
   &__button {
+    cursor: pointer;
     width: 240px;
     height: 37px;
     background-color: $btnUnactiveCl;
@@ -88,7 +91,7 @@ label {
 }
 
 @media screen and (min-width: 768px) {
-  .modal {
+  .modalContact {
     padding: 48px 32px;
     width: 480px;
     height: 511px;
