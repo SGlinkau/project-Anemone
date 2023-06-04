@@ -19,7 +19,6 @@
 
     <!-- Font Montserrat 400, 500, 600, 700 -->
 
-
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -29,8 +28,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -344,18 +341,32 @@
             If you have any additional questions or you want to clarify something before you make an
             order please fill in your contact details. We will call you back.
           </p>
-            <label class="modal__element">
-              Name
-              <input class="modal__input" type="text" id="uname" name="name" pattern="[a-z]{3,}" placeholder="Your name"/>
-            </label>
-            <label class="modal__element">
-              Email 
-              <input class="modal__input" type="email" id="uemail" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Your email" />
-            </label>
-            <button class="modal__button" type="submit">Send</button>
-      </form>
-    </div>                   
-  </div>
+          <label class="modal__element">
+            Name
+            <input
+              class="modal__input"
+              type="text"
+              id="uname"
+              name="name"
+              pattern="[a-z]{3,}"
+              placeholder="Your name"
+            />
+          </label>
+          <label class="modal__element">
+            Email
+            <input
+              class="modal__input"
+              type="email"
+              id="uemail"
+              name="email"
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+              placeholder="Your email"
+            />
+          </label>
+          <button class="modal__button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
 
     <script
       defer
@@ -408,31 +419,25 @@
               <label class="modal-flow__form-item">
                 <span class="modal-flow__form-title">Email</span>
 
-            <input
-              class="modal-flow__form-input"
-              type="email"
-              name="email"
-              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-              placeholder="Your email"
-            />
-          </label>
-          <button class="modal-flow__form-subscribe" type="submit">
-            <span class="modal-flow__form-subscribe-text">Subscribe</span>
-            
-          </button>
-          </form>
-       </div>
-
-        
-           
-       
-
-
+                <input
+                  class="modal-flow__form-input"
+                  type="email"
+                  name="email"
+                  pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                  placeholder="Your email"
+                />
+              </label>
+              <button class="modal-flow__form-subscribe" type="submit">
+                <span class="modal-flow__form-subscribe-text">Subscribe</span>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
     <script src="./js/modal-sub.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
