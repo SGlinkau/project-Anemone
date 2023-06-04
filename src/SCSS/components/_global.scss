@@ -161,7 +161,7 @@ h3 {
   width: 208px;
   height: 44px;
   font-size: 20px;
-
+  cursor: pointer;
   &:focus {
     background-color: $btnFocusCl;
     transition: $btnAnimation;
@@ -188,6 +188,7 @@ h3 {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
+  cursor: pointer;
 
   &:focus {
     background-color: $btnFocusCl;
