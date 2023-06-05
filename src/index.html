@@ -522,16 +522,31 @@
 
         <div class="modal-flow">
           <div class="modal-flow__img">
-            <img
-              src="./images/image_modalMobile.jpg"
-              srcset="
-                ./images/image_modalMobile.jpg  272w,
-                ./images/image_modalTablet.jpg  588w,
-                ./images/image_modalDesktop.jpg 428w
-              "
-              sizes="(min-width: 1280px) 428px, (min-width: 768px) 588px, (max-width: 767px) 272px, 100vw"
-              alt="orange-green bouquet of flowers"
-            />
+            <picture class="modal-img">
+              <source
+                media="(min-width:1280px)"
+                srcset="./images/image_modalDesktop.jpg 1x, ./images/image_modalDesktop@2x.jpg 2x"
+                type="image/jpeg"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="./images/image_modalTablet.jpg 1x, ./images/image_modalTablet@2x.jpg 2x"
+                type="image/jpeg"
+              />
+
+              <source
+                media="(max-width:767px)"
+                srcset="./images/image_aboutMobile.jpg 1x, ./images/image_modalMobile@2x.jpg 2x"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/image_aboutDesktop.jpg"
+                alt=""
+                loading="lazy"
+                class="modal-flow__img-photo"
+              />
+            </picture>
           </div>
 
           <div class="modal-flow__container">
