@@ -122,12 +122,12 @@
   &__item {
     font-size: 20px;
     line-height: 1.2;
-    color: $whiteFontCl;
     cursor: pointer;
   }
 
   &__link {
     text-decoration: none;
+    color: $whiteFontCl;
 
     &:visited {
       color: $whiteFontCl;
