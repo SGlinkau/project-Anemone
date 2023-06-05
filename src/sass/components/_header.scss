@@ -5,7 +5,7 @@
   padding-top: 16px;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
     padding-top: 24px;
@@ -91,7 +91,7 @@
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-150%);
   transition: transform 250ms;
-  z-index: 999;
+  z-index: 1000;
 
   &.is-open {
     transform: translateX(0);
@@ -143,6 +143,6 @@
 #blog {
   scroll-margin-top: 100px;
 }
-#about-us {
+#about {
   scroll-margin-top: 100px;
 }
