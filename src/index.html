@@ -106,17 +106,42 @@
       </section>
 
       <!-- About -->
-      <section class="container" id="about">
-        <h2 class="section__header title">
-          about
-          <div class="title__line"></div>
-        </h2>
-        <p class="about--font">
-          We are a minimalistic flower studio. We love people and flowers. Therefore, every day we
-          give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we
-          create is unique as you are.
-        </p>
-        <img src="./images/about.png" class="about__img" alt="" />
+
+      <!-- About -->
+      <section class="container about-section" id="about">
+        <h2 class="about-title title">about</h2>
+        <div class="about-box">
+          <p class="about-p">
+            We are a minimalistic flower studio. We love people and flowers. Therefore, every day we
+            give people the beauty and joy creating stylish and modern masterpieces. Every bouquet
+            we create is unique as you are.
+          </p>
+          <picture class="about-img">
+            <source
+              media="(min-width:1280px)"
+              srcset="./images/image_aboutDesktop.jpg 1x, ./images/image_aboutDesktop.jpg 2x"
+              type="image/jpeg"
+            />
+
+            <source
+              media="(min-width:768px)"
+              srcset="./images/image_aboutTablet.jpg 1x, ./images/image_aboutTablet.jpg 2x"
+              type="image/jpeg"
+            />
+
+            <source
+              media="(max-width:767px)"
+              srcset="./images/image_aboutMobile.jpg 1x, ./images/image_aboutMobile.jpg 2x"
+              type="image/jpeg"
+            />
+            <img
+              src="./images/image_aboutDesktop.jpg"
+              alt=""
+              loading="lazy"
+              class="about-img_photo"
+            />
+          </picture>
+        </div>
       </section>
 
       <!-- store -->
