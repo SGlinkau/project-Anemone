@@ -106,8 +106,6 @@
       </section>
 
       <!-- About -->
-
-      <!-- About -->
       <section class="container about-section" id="about">
         <h2 class="about-title title">about</h2>
         <div class="about-box">
@@ -242,25 +240,105 @@
 
       <!-- Blog -->
       <section class="container" id="blog">
-        <h2 class="section__header title">
-          blog
-          <div class="title__line"></div>
-        </h2>
-        <div class="blog__img">
-          <img src="./images/blog1.jpg" alt="" />
-          <img src="./images/blog2.jpg" alt="" />
-        </div>
-        <div class="blog__arrows">
-          <svg width="50" height="50">
-            <use href="./images/icons.svg#icon-arrow-left"></use>
-          </svg>
-          <svg width="50" height="50">
-            <use href="./images/icons.svg#icon-arrow-right"></use>
-          </svg>
-        </div>
-        <p class="blog__text">Follow to our newsletter</p>
-        <div class="blog__button-box">
-          <button class="btn" data-modal-open-sub>Subscribe</button>
+        <h2 class="blog-title title">blog</h2>
+        <ul class="blog-list">
+          <li class="blog-list_element">
+            <picture class="blog-list_element-img">
+              <source
+                media="(min-width:1280px)"
+                srcset="./images/image_blog1Dekstop.jpg 1x, ./images/image_blog1Dekstop.jpg 2x"
+                type="image/jpeg"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="./images/image_blog1Tablet.jpg 1x, ./images/image_blog1Tablet.jpg 2x"
+                type="image/jpeg"
+              />
+
+              <source
+                media="(max-width:767px)"
+                srcset="./images/image_blog1Mobile.jpg 1x, ./images/image_blog1Mobile.jpg 2x"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/image_blog1Mobile.jpg"
+                alt=""
+                loading="lazy"
+                class="blog-list_element-img"
+              />
+            </picture>
+          </li>
+          <li class="blog-list_element">
+            <picture class="blog-list_element-img">
+              <source
+                media="(min-width:1280px)"
+                srcset="./images/image_blog2Dekstop.jpg 1x, ./images/image_blog2Dekstop.jpg 2x"
+                type="image/jpeg"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="./images/image_blog2Tablet.jpg 1x, ./images/image_blog2Tablet.jpg 2x"
+                type="image/jpeg"
+              />
+
+              <source
+                media="(max-width:767px)"
+                srcset="./images/image_blog2Mobile.jpg 1x, ./images/image_blog2Mobile.jpg 2x"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/image_blog2Mobile.jpg"
+                alt=""
+                loading="lazy"
+                class="blog-list_element-img"
+              />
+            </picture>
+          </li>
+          <li class="blog-list_element blog-list_element--display">
+            <picture class="blog-list_element-img">
+              <source
+                media="(min-width:1280px)"
+                srcset="./images/image_blog3Dekstop.jpg 1x, ./images/image_blog1Dekstop.jpg 2x"
+                type="image/jpeg"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="./images/image_blog3Tablet.jpg 1x, ./images/image_blog3Tablet.jpg 2x"
+                type="image/jpeg"
+              />
+
+              <source
+                media="(max-width:767px)"
+                srcset="./images/image_blog3Mobile.jpg 1x, ./images/image_blog3Mobile.jpg 2x"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/image_blog3Mobile.jpg"
+                alt=""
+                loading="lazy"
+                class="blog-list_element-img"
+              />
+            </picture>
+          </li>
+        </ul>
+        <ul class="blog-list2">
+          <li>
+            <svg class="blog-list2_icon" width="50" height="50">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="blog-list2_icon" width="50" height="50">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="blog-p">Follow to our newsletter</p>
+        <div class="blog-box">
+          <button class="blog-box_button" data-modal-open-sub>Subscribe</button>
         </div>
       </section>
     </main>

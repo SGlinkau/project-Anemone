@@ -1,29 +1,124 @@
+@import '../utils/vars';
+
 .blog {
-  &__img {
+  &-title {
+    font-size: 24px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    &::after {
+      content: '';
+      border-top: 1px solid black;
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+
+  &-list {
     display: flex;
     gap: 16px;
     justify-content: center;
-    align-items: center;
-  }
-  &__arrows {
-    display: flex;
-    padding-top: 4px;
-    gap: 25px;
-    justify-content: center;
-  }
-  &__text {
-    margin: 0px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    padding-top: 14px;
+    padding: 0;
+
+    &_element {
+      display: flex;
+      height: 100%;
+      width: 100%;
+
+      &--display {
+        display: none;
+      }
+
+      &-img {
+        display: flex;
+        height: 100%;
+        width: 100%;
+      }
+    }
   }
 
-  &__button-box {
+  &-list2 {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 0;
+
+    > li {
+      cursor: pointer;
+    }
+  }
+
+  &-p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  &-box {
     display: flex;
     justify-content: center;
-    padding-top: 14px;
-    padding-bottom: 60px;
+
+    &_button {
+      background: $btnDefCl;
+      border-radius: 38px;
+      border: none;
+      color: $whiteFontCl;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 500;
+      height: 40px;
+      line-height: 1.33;
+      margin-bottom: 60px;
+      width: 170px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog {
+    &-title {
+      font-size: 44px;
+    }
+
+    &-list_element-img {
+      max-width: 344px;
+      max-height: 398px;
+    }
+    &-list2_icon {
+      width: 61px;
+      height: 61px;
+    }
+
+    &-p {
+      font-size: 32px;
+    }
+
+    &-box_button {
+      width: 280px;
+      height: 64px;
+      font-size: 28px;
+      line-height: 0.86;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .blog {
+    &-list_element {
+      &--display {
+        display: block;
+      }
+      &-img {
+        max-width: 390px;
+        max-height: 421px;
+      }
+    }
   }
 }
