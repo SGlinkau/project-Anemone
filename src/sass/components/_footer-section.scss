@@ -1,132 +1,117 @@
-@use "../utils/vars" as *;
+@import '../utils/vars';
 
-footer {
+.footer {
   background-color: $darkFontCl;
-  color: $whiteFontCl; 
-}
+  height: 389px;
 
-.footer-section {
-  display: flex;
-  justify-content: space-between;
-
-  &__title {
-    padding-bottom: 18px;
-    margin: 0px;
-  }
-
-  &__nav {
+  &-section {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 0px;
-    margin: 0px;
 
-    &__link {
-      text-decoration: none;
-      color: $whiteFontCl;
-      margin: 0;
-    }
+    padding: 0 16px;
+    color: $whiteFontCl;
   }
 
-  &__text {
-    margin: 0px;
-  }
-
-  &__box {
-
-    &__list {
-      margin: 0px;
-      padding: 0px;
-      word-wrap: break-word;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-
-      &__link {
-        text-decoration: none;
-        color: $whiteFontCl;
-        margin: 0;
-      }
-
-      &__address {
-        margin: 0;
-      }
-    }
-
-    &--socialmedia {
-      display: flex;
-      gap: 16px;
-    }
-
-    &--logo {
-      fill: $whiteFontCl;
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-
-  .footer-section {
-    max-width: 320px;
+  &-row {
+    margin: 0 auto;
+    max-width: 480px;
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
-    padding: 32px 16px;
-    gap: 32px;
+    justify-content: space-between;
+    margin-top: 72px;
+  }
 
-    &__box {
-      width: 130px;
+  &-col {
+    width: 48%;
+    height: 25%;
+
+    &--display {
+      display: none;
     }
   }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+  &-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    display: inline;
+  }
 
-  .footer-section {
-    max-width: 768px;
-    padding: 60px 24px 54px;
-    gap: 44px;
+  &-list {
+    font-style: normal;
+    padding: 0;
+    width: 100%;
+    margin-top: 18px;
 
-    &__box {
+    &_icons {
+      display: flex;
+      gap: 14px;
+    }
 
-      &--socialmedia {
-        flex-direction: column;
+    &_element {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.21;
+      margin-bottom: 12px;
+
+      > a {
+        color: $whiteFontCl;
+        font-family: 'Inter', sans-serif;
+        text-decoration: none;
+
+        > span {
+          font-family: 'Inter', sans-serif;
+          text-decoration: none;
+        }
       }
     }
   }
+
+  &-p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.21;
+    display: inline;
+  }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 268px;
+    margin: 0 auto;
+    &-row {
+      max-width: 768px;
+      flex-wrap: nowrap;
+    }
 
-  .footer-section {
+    &-col {
+      width: auto;
+    }
 
-    &__box {
-
-      &--logo{
+    &-list {
+      &_element-br {
         display: none;
+      }
+      &_icons {
+        display: block;
+        gap: 18px;
       }
     }
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .footer {
+    height: 299px;
+    &-row {
+      max-width: 1280px;
+    }
 
-  .footer-section {
-    max-width: 1280px;
-    padding: 72px 48px 72px 24px;
-    gap: 96px;
-
-    &__box {
-
-      &--socialmedia {
-        flex-direction: column;
-        align-items: end;
-      }
-      
-      &:first-child {
-        flex-grow: 2;
-      }
-      &:last-child {
-        flex-grow: 2;
-      }
+    &-col--display {
+      display: block;
+      fill: #fff;
     }
   }
 }
