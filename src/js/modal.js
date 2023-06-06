@@ -1,12 +1,17 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
+    openModalBtn: document.querySelectorAll('[data-modal-open]'),
+    closeModalBtn: document.querySelectorAll('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn.forEach(btn => {
+    btn.addEventListener('click', toggleModal);
+  });
+
+  refs.closeModalBtn.forEach(btn => {
+    btn.addEventListener('click', toggleModal);
+  });
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
