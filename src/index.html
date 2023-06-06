@@ -501,11 +501,24 @@
           </p>
           <label class="modalContact__element">
             Name
-            <input class="modalContact__input" type="text" name="name" placeholder="Your name" pattern="[a-zA-Z]{3,}" required/>
+            <input
+              class="modalContact__input"
+              type="text"
+              name="name"
+              placeholder="Your name"
+              pattern="[a-zA-Z]{3,}"
+              required
+            />
           </label>
           <label class="modalContact__element">
             Email
-            <input class="modalContact__input" type="text" name="name" placeholder="Your email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" />
+            <input
+              class="modalContact__input"
+              type="text"
+              name="name"
+              placeholder="Your email"
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+            />
           </label>
           <button class="modalContact__button" type="submit">Send</button>
         </form>
@@ -557,8 +570,10 @@
             </p>
 
             <form class="modal-flow__form">
-              <label class="modal-flow__form-item">
-                <span class="modal-flow__form-title">Email</span>
+              <div class="modal-flow__form-package">
+                <label for="user_email" class="modal-flow__form-item">
+                  <span class="modal-flow__form-title">Email</span>
+                </label>
 
                 <input
                   class="modal-flow__form-input"
@@ -566,8 +581,10 @@
                   name="email"
                   pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                   placeholder="Your email"
-                  />
-              </label>
+                  id="user_email"
+                />
+              </div>
+
               <button class="modal-flow__form-subscribe" type="submit">
                 <span class="modal-flow__form-subscribe-text">Subscribe</span>
               </button>
