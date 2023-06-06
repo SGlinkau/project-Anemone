@@ -34,7 +34,7 @@ label {
   background: rgba(255, 255, 255, 1);
   display: block;
   transition: transform 0.3s linear;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
@@ -134,27 +134,27 @@ label {
 input:invalid {
   border: red solid 1px;
   padding-left: 10px;
-  background-image: url(/src/images/Error-logo.svg) ;
+  background-image: url(/src/images/Error-logo.svg);
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position-x: right 14px ;
+  background-position-x: right 14px;
   background-position-y: center;
   color: $darkFontCl;
 }
 
 input:valid {
-  border: #3CBC81ed solid 1px;
+  border: #3cbc81ed solid 1px;
   padding-left: 10px;
-  background-image: url(/src/images/Correct.svg) ;
+  background-image: url(/src/images/Correct.svg);
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position-x: right 14px ;
+  background-position-x: right 14px;
   background-position-y: center;
   color: $darkFontCl;
-} 
+}
 
 input:placeholder-shown:focus {
-  border: #666464  solid 1px;
+  border: #666464 solid 1px;
   background-image: none;
 }
 
