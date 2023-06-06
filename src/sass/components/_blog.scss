@@ -76,6 +76,14 @@
       line-height: 1.33;
       margin-bottom: 60px;
       width: 170px;
+
+      &:hover {
+        background-color: $btnHoverCl;
+      }
+
+      &:focus {
+        background-color: $btnFocusCl;
+      }
     }
   }
 }
