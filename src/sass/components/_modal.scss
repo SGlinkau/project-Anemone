@@ -133,5 +133,33 @@ label {
 
 //For now only as input class but maybe we should move it to separate class connected with modal form fields
 input:invalid {
-  border: red solid 3px;
+  border: red solid 1px;
+  padding-left: 10px;
+  background-image: url(/src/images/Error-logo.svg) ;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position-x: right 14px ;
+  background-position-y: center;
+  color: $darkFontCl;
+}
+
+input:valid {
+  border: #3CBC81ed solid 1px;
+  padding-left: 10px;
+  background-image: url(/src/images/Correct.svg) ;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position-x: right 14px ;
+  background-position-y: center;
+  color: $darkFontCl;
+} 
+
+input:placeholder-shown:focus {
+  border: #666464  solid 1px;
+  background-image: none;
+}
+
+input:placeholder-shown {
+  border: #dcd7d7 solid 1px;
+  background-image: none;
 }

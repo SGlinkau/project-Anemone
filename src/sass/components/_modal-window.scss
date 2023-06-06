@@ -41,6 +41,7 @@
   flex-direction: column;
   justify-content: center;
   &__img {
+    display: flex;
     width: 272px;
     height: 121px;
     & > img {
@@ -79,6 +80,12 @@
     flex-direction: column;
     gap: 18px;
     align-items: center;
+    &-package {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 8px;
+    }
 
     &-item {
       display: flex;
@@ -94,7 +101,7 @@
     }
     &-input {
       height: 35px;
-      width: 220px;
+      width: 236px;
       outline: none;
       padding-left: 12px;
       border: 1px solid #d7d7d7;
@@ -108,12 +115,6 @@
       }
       &:hover {
         border-color: rgba(17, 17, 17, 0.7);
-      }
-      &:valid {
-        border-color: $inputCorrectCl;
-      }
-      &:invalid {
-        border-color: $inputErrorCl;
       }
     }
     &-subscribe {
@@ -178,7 +179,7 @@
       }
       &-input {
         height: 49px;
-        width: 322px;
+        width: 336px;
         font-size: 14px;
       }
       &-subscribe {

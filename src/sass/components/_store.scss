@@ -60,5 +60,9 @@
     display: flex;
     justify-content: center;
     padding-top: 32px;
+
+    @media screen and (min-width: 60px) {
+      padding-top: 60px;
+    }
   }
 }
