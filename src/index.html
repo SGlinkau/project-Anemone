@@ -15,24 +15,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Modern Normalizer -->
-    <link  rel="stylesheet"
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Font Montserrat 400, 500, 600, 700 -->
-
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- Font Inter 500, 700 dla footer-->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="header">
       <section class="container">
@@ -110,15 +113,15 @@
       </section>
 
       <!-- About -->
-      <section class="container about-section" id="about">
-        <h2 class="about-title title">about</h2>
-        <div class="about-box">
-          <p class="about-p">
+      <section class="container about" id="about">
+        <h2 class="about__title title">about</h2>
+        <div class="about__box">
+          <p class="about__p">
             We are a minimalistic flower studio. We love people and flowers. Therefore, every day we
             give people the beauty and joy creating stylish and modern masterpieces. Every bouquet
             we create is unique as you are.
           </p>
-          <picture class="about-img">
+          <picture class="about__img">
             <source
               media="(min-width:1280px)"
               srcset="./images/image_aboutDesktop.jpg 1x, ./images/image_aboutDesktop.jpg 2x"
@@ -140,7 +143,7 @@
               src="./images/image_aboutDesktop.jpg"
               alt=""
               loading="lazy"
-              class="about-img_photo"
+              class="about__img_photo"
             />
           </picture>
         </div>
@@ -228,11 +231,11 @@
         </div>
         <div class="store__button-box">
           <button class="btn" type="button" data-modal-open>Order flowers</button>
+          <button class="btn" type="button" data-modal-open>Order flowers</button>
         </div>
       </section>
 
       <!-- Delivery -->
-
       <section class="delivery" id="delivery">
         <div class="container">
           <h2 class="section__header delivery__title">
@@ -284,7 +287,6 @@
           />
           <img
             src="./images/image_deliveryDesktop.jpg"
-            alt=""
             class="delivery__img"
             alt="delicate anemone flowers"
             loading="lazy"
@@ -295,11 +297,11 @@
       </section>
 
       <!-- Blog -->
-      <section class="container" id="blog">
-        <h2 class="blog-title title">blog</h2>
-        <ul class="blog-list">
-          <li class="blog-list_element">
-            <picture class="blog-list_element-img">
+      <section class="container blog" id="blog">
+        <h2 class="blog__title title">blog</h2>
+        <ul class="blog__list">
+          <li class="blog__list-element">
+            <picture class="blog__list-element-img">
               <source
                 media="(min-width:1280px)"
                 srcset="./images/image_blog1Dekstop.jpg 1x, ./images/image_blog1Dekstop.jpg 2x"
@@ -321,12 +323,12 @@
                 src="./images/image_blog1Mobile.jpg"
                 alt=""
                 loading="lazy"
-                class="blog-list_element-img"
+                class="blog__list-element-img"
               />
             </picture>
           </li>
-          <li class="blog-list_element">
-            <picture class="blog-list_element-img">
+          <li class="blog__list-element">
+            <picture class="blog__list-element-img">
               <source
                 media="(min-width:1280px)"
                 srcset="./images/image_blog2Dekstop.jpg 1x, ./images/image_blog2Dekstop.jpg 2x"
@@ -348,12 +350,12 @@
                 src="./images/image_blog2Mobile.jpg"
                 alt=""
                 loading="lazy"
-                class="blog-list_element-img"
+                class="blog__list-element-img"
               />
             </picture>
           </li>
-          <li class="blog-list_element blog-list_element--display">
-            <picture class="blog-list_element-img">
+          <li class="blog__list-element blog__list-element--display">
+            <picture class="blog__list-element-img">
               <source
                 media="(min-width:1280px)"
                 srcset="./images/image_blog3Dekstop.jpg 1x, ./images/image_blog3Dekstop.jpg 2x"
@@ -375,26 +377,26 @@
                 src="./images/image_blog3Mobile.jpg"
                 alt=""
                 loading="lazy"
-                class="blog-list_element-img"
+                class="blog__list-element-img"
               />
             </picture>
           </li>
         </ul>
-        <ul class="blog-list2">
+        <ul class="blog__list2">
           <li>
-            <svg class="blog-list2_icon" width="50" height="50">
+            <svg class="blog__list2-icon" width="50" height="50">
               <use href="./images/icons.svg#icon-arrow-left"></use>
             </svg>
           </li>
           <li>
-            <svg class="blog-list2_icon" width="50" height="50">
+            <svg class="blog__list2-icon" width="50" height="50">
               <use href="./images/icons.svg#icon-arrow-right"></use>
             </svg>
           </li>
         </ul>
-        <p class="blog-p">Follow to our newsletter</p>
-        <div class="blog-box">
-          <button class="blog-box_button" data-modal-open-sub>Subscribe</button>
+        <p class="blog__p">Follow to our newsletter</p>
+        <div class="blog__box">
+          <button class="blog__box-button" data-modal-open-sub>Subscribe</button>
         </div>
       </section>
     </main>
@@ -404,55 +406,57 @@
         <div class="footer-row">
           <div class="footer-col footer-col--display">
             <a href="#">
-              <svg class="footer-col_icon" width="60" height="60"><use href="./images/icons.svg#icon-logo"></use></svg>
+              <svg class="footer-col__icon" width="60" height="60">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
             </a>
           </div>
 
           <div class="footer-col">
-            <h2 class="footer-title">Navigation</h2>
+            <h2 class="footer-col__title">Navigation</h2>
             <nav>
-              <ul class="footer-list">
-                <li class="footer-list_element"><a href="#anemone">Anemone</a></li>
-                <li class="footer-list_element"><a href="#about">About us</a></li>
-                <li class="footer-list_element"><a href="#store">Store</a></li>
-                <li class="footer-list_element"><a href="#delivery">Delivery</a></li>
+              <ul class="footer-col__list">
+                <li class="footer-col__list-element"><a href="#anemone">Anemone</a></li>
+                <li class="footer-col__list-element"><a href="#about">About us</a></li>
+                <li class="footer-col__list-element"><a href="#store">Store</a></li>
+                <li class="footer-col__list-element"><a href="#delivery">Delivery</a></li>
               </ul>
             </nav>
           </div>
 
           <div class="footer-col">
-            <h2 class="footer-title">Opening times<br /><br /></h2>
-            <p class="footer-p">Every day<br />9:00-22:00</p>
+            <h2 class="footer-col__title">Opening times<br /><br /></h2>
+            <p class="footer-col__p">Every day<br />9:00-22:00</p>
           </div>
 
           <div class="footer-col">
-            <h2 class="footer-title">Contacts</h2>
+            <h2 class="footer-col__title">Contacts</h2>
             <address>
-              <ul class="footer-list">
-                <li class="footer-list_element">
+              <ul class="footer-col__list">
+                <li class="footer-col__list-element">
                   <a href="tel:+380631234567">+38 063 123 45 67</a>
                 </li>
-                <li class="footer-list_element">
+                <li class="footer-col__list-element">
                   <a href="mailto:anemonestudio@example.com"
-                    >anemonestudio<br class="footer-list_element-br" />
+                    >anemonestudio<br class="footer-col__list-element-br" />
                     @example.com</a
                   >
                 </li>
-                <li class="footer-list_element">Reitarska Street, 11 Kyiv, Ukraine</li>
+                <li class="footer-col__list-element">Reitarska Street, 11 Kyiv, Ukraine</li>
               </ul>
             </address>
           </div>
 
           <div class="footer-col">
-            <ul class="footer-list footer-list_icons">
-              <li class="footer-list_element">
+            <ul class="footer-col__list footer-col__list_icons">
+              <li class="footer-col__list-element">
                 <a href="#">
                   <svg width="28" height="28">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-list_element">
+              <li class="footer-col__list-element">
                 <a href="#">
                   <svg width="28" height="28">
                     <use href="./images/icons.svg#icon-instagram"></use>
