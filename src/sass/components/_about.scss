@@ -1,5 +1,5 @@
 .about {
-  &-title {
+  &__title {
     font-size: 24px;
     line-height: 1.21;
     text-transform: uppercase;
@@ -15,13 +15,13 @@
       width: 100%;
     }
   }
-  &-p {
+  &__p {
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 16px;
   }
 
-  &-img {
+  &__img {
     display: flex;
     height: 100%;
     width: 100%;
@@ -37,22 +37,22 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    &-title {
+    &__title {
       font-size: 44px;
     }
 
-    &-p {
+    &__p {
       font-size: 20px;
       width: 50%;
       margin-right: 54px;
     }
 
-    &-img {
+    &__img {
       max-width: 344px;
       max-height: 217px;
     }
 
-    &-box {
+    &__box {
       display: flex;
     }
   }
@@ -60,17 +60,17 @@
 
 @media screen and (min-width: 1280px) {
   .about {
-    &-p {
+    &__p {
       font-size: 22px;
       margin-right: 90px;
     }
 
-    &-img {
+    &__img {
       max-width: 632px;
       max-height: 344px;
     }
 
-    &-box {
+    &__box {
       align-items: center;
     }
   }
