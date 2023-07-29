@@ -1,3 +1,1 @@
-<h2> Projekt grupowy w ramach kursu GoIT </h2>
-
-<span>Link do strony w GitHub Pages: https://sglinkau.github.io/project-group-6/</span>
+Group project that I took part in 2023 during my learning time. I was assigned as Team Leader and Scrum Master of this project.
